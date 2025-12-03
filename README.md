@@ -12,6 +12,15 @@ Requirements: Conda
 4. run
     `python linkedInJobFinder.py`
 
+## Docker Container
+There is a docker image of the program also available for ease of use,
+1. run
+`docker pull gamebulese/jobfinder:latest`
+2. run
+`docker run --rm gamebulese/jobfinder:latest`
+3. Success!
+
+
 ## tests:
 1. run
     `python -m pytest`
