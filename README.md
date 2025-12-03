@@ -2,6 +2,7 @@
 This app uses an API to compare job postings of a particular type to any docx resume. For instance, one could search for landscaping jobs with a landscaping resume. The app uses a second API, OpenAi, to create embeddings of the jobs and your resume and compare them, using cosine similarity. The app then outputs "LinkedIn.txt" with your top 10 job postings.
 
 ## installation:
+`git clone https://github.com/SeanTheShe3p/JobFinder.git`
 Requirements: Conda
 
 1. Create Conda environment by running
@@ -13,6 +14,7 @@ Requirements: Conda
     `python linkedInJobFinder.py`
 
 ## Docker Container
+https://hub.docker.com/r/gamebulese/jobfinder
 There is a docker image of the program also available for ease of use,
 1. run
 `docker pull gamebulese/jobfinder:latest`
