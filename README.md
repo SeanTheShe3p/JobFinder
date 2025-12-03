@@ -12,6 +12,14 @@ Requirements: Conda
 4. run
     `python linkedInJobFinder.py`
 
+## tests:
+1. run
+    `python -m pytest`
+    test 1 - create a fake api call monkeypatching requests
+    test 2 - use a mock embedding service to test abstract base class by creating a mock interface
+    test 3 - create fake embeddings and test SimilarityCalculator for rank()
+    test 4 - convert a fake resume, monkeypatch method to return mock value
+
 ## Usage:
     2025-11-08T00:34:56Senior Front-End Developer - React Native & Web (DevOps-First) https://www.linkedin.com/jobs/view/senior-front-end-developer-react-native-web-devops-first-at-sports-profile-network-4312390561 None75% Front-End (React Native + React Web) + 25% Backend (TypeScript Node.js). You'll modernize our mobile app, build responsive web experiences, and develop the backend-for-frontend service that power them—all with a strong emphasis on deployment automation and pipeline reliability.  The Technical Stack:  Mobile (Primary - ~50%): - React Native / Expo - TypeScript strict mode - EAS builds & deployments - iOS & Android platforms  Web (Secondary - ~25%): - React + TypeScript - Vite build tooling - Responsive design (mobile-first) - Component library development  Backend-for-frontend (25%): - Node.js + TypeScript - RESTful APIs - Microservices integration   What You'll Do:  Mobile Development (50%) - Lead migration from bare React Native to Expo managed workflow - Build and refactor React Native components with TypeScript - Implement new features while modernizing legacy code - Optimize app performance and bundle size - Own iOS & Android deployments via EAS  Web Development (25%) - Build responsive, accessible React web applications - Implement reusable components from Figma designs - Use modern tooling: React + TypeScript + Vite - Create reusable component libraries - Ensure cross-browser compatibility and performance  Backend Development (25%) - Design and build TypeScript Node.js APIs (REST or GraphQL) - Extract business logic from front-end to backend services - Design database schemas and optimize queries - Implement authentication and authorization - Write API documentation and tests  DevOps (Ongoing) - Maintain and improve GitHub Actions CI/CD pipelines - Manage EAS build configurations for mobile - Deploy backend services to cloud platforms - Optimize build times and pipeline reliability - Document deployment processes   Our Mission: At SPIN, we believe that sports should bring families and communities together, not create chaos through fragmented technology. We're building the ultimate integration platform that consolidates the scattered world of youth sports apps into one seamless experience.['FULL_TIME']NoneMid-Senior levelThe first all sports social networkNone.....
     
