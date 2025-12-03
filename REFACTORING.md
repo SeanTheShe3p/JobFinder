@@ -2,18 +2,20 @@
 
 ## Single Purpose and Dependency Inversion
 
-    <p>1. Single Responsibility was an obvious choice because it really is the most basic, and necessary principle. Code that is simply a script is hard to follow and a lot of ease of readability comes from having single purpose classes, everything is nicely labeled in dot notation and instances of objects are created allowing an amount of reusability in the code. </p>
+<p>1. Single Responsibility was an obvious choice because it really is the most basic, and necessary principle. Code that is simply a script is hard to follow and a lot of ease of readability comes from having single purpose classes, everything is nicely labeled in dot notation and instances of objects are created allowing an amount of reusability in the code. </p>
 ```
 Scraper = JobScraper(api_url, headers, 50)
 jobs = Scraper.getJobOffers()
-    <p>vs</p>
+```
+<p>vs</p>
+```
 job_list = pull_api_data(api_url, headers, 99)
 ```
-    <p>Ironically for this use it actually made the main function longer, but the traceability of the function calls is night and day obvious, especially in</p>
+<p>Ironically for this use it actually made the main function longer, but the traceability of the function calls is night and day obvious, especially in</p>
 ```
 top_jobs = compare_data(job_list, resume)
 ```    
-    <p>which initally had a jumble of different functions called and was essentially one monolith, is now</p>
+<p>which initally had a jumble of different functions called and was essentially one monolith, is now</p>
 ```
 ChatGPT = ChatGPTEmbeddingService()
 embeddingService = EmbeddingService(ChatGPT)
@@ -23,7 +25,7 @@ top_jobs = Calculator.rank()
 ```
 
 
-    <p>2. Dependency Invesion was the next implementation due to the complexity of embedding services, and for security purposes, it makes sense to abstract away from the embedding service by implementing an interface that any embedding services could use. I did this by using the abstract base class and giving ChatGPT its own implementation so that if someone were to want to use a Gemini or DeepSeek embedding model that could be done much easier.</p> 
+<p>2. Dependency Invesion was the next implementation due to the complexity of embedding services, and for security purposes, it makes sense to abstract away from the embedding service by implementing an interface that any embedding services could use. I did this by using the abstract base class and giving ChatGPT its own implementation so that if someone were to want to use a Gemini or DeepSeek embedding model that could be done much easier.</p> 
 ```
 class IEmbeddingService(ABC):
     @abstractmethod
